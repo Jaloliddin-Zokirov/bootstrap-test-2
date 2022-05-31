@@ -4,10 +4,140 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <title>bootstrap-test-2</title>
 </head>
 <body>
+
+  <div class="container">
+    <div class="row py-2 ">
+      <h2 class="text-center mt-0 mb-3 fw-bold fs-2 ">Movies catalog</h2>
+      <div class="row">
+        <div class="col-4 mr-4 ">
+          <form class="mb-4" action="https://echo.htmlacademy.ru/" method="POST">
+            <input class="w-100 form-control mb-3 " type="text" name="user_ave" aria-label="Enter your ave" placeholder="ave">
+            <input class="w-100 form-control mb-3 " type="text" name="user_text" aria-label="Enter your text" placeholder="5">
+            <div class="mb-3">
+              <select class="form-select " name="user_select" aria-label="choose one of two or three of these">
+                <option selected disabled >All</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">There</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <input class="form-control " list="country" aria-label="choose one of two or three of these" placeholder="Rating (high to low)">
+              <datalist id="country">
+                <option value="One">
+                <option value="Two">
+                <option value="There">  
+              </datalist>
+            </div>
+            <div class="btn-group w-100 " role="group" aria-label="Basic example">
+              <button class="btn btn-primary " type="button">Search</button>
+            </div>
+          </form>
+          <div class="w-100 ">
+            <h3 class="text-center mt-0 mb-2 fw-bold fs-1 ">Bookmarked movies</h3>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <p class="mt-0 mb-2 fw-bold fs-5  ">Avengers: Infinity War</p>
+                <a class="btn btn-danger" href="#">Remove</a>
+              </li>
+              <li class="list-group-item">
+                <p class="mt-0 mb-2 fw-bold fs-5  ">The Avengers</p>
+                <a class="btn btn-danger" href="#">Remove</a>
+              </li>
+              <li class="list-group-item">
+                <p class="mt-0 mb-2 fw-bold fs-5  ">12 Years a Slave</p>
+                <a class="btn btn-danger" href="#">Remove</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-8 ps-4">
+          <strong class="d-block fs-5 mb-2 ">Search results: 39</strong>
+          <div class="alert alert-primary  " role="alert">
+            Use the form on the left to search for a movie
+          </div>
+          <div class="row mb-5 ">
+            <div class="col-6 ">
+              <div class="card px-0 w-100" style="width: 18rem;">
+                <img class="card-img-top" src="./images/infinity_war.jpg" alt="infinity_war">
+                <div class="card-body pt-3 pb-4 px-4">
+                  <h5 class="card-title fw-bold mb-2">Avengers: Infinity War</h5>
+                  <div class="d-flex ">
+                    <img class="me-2" src="./images/calendar.png" width="26" height="24" alt="calendar icon">
+                    <span>2018</span>
+                  </div>
+                  <div class="d-flex my-3 ">
+                    <img class="me-2" src="./images/star.png" width="24" height="24" alt="star icon">
+                    <span>8.7</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">Watch trailer</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">More info</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">Bookmark</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 ">
+              <div class="card px-0 w-100" style="width: 18rem;">
+                <img class="card-img-top" src="./images/the_avengers.jpg" alt="the_avengers">
+                <div class="card-body pt-3 pb-4 px-4">
+                  <h5 class="card-title fw-bold mb-2">The Avengers</h5>
+                  <div class="d-flex ">
+                    <img class="me-2" src="./images/calendar.png" width="26" height="24" alt="calendar icon">
+                    <span>2012</span>
+                  </div>
+                  <div class="d-flex my-3 ">
+                    <img class="me-2" src="./images/star.png" width="24" height="24" alt="star icon">
+                    <span>8.1</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">Watch trailer</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">More info</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">Bookmark</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <ul class="pagination pagination-md">
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">1</span>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">4</a>
+              </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   
 </body>
 </html>
